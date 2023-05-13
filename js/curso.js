@@ -1,44 +1,44 @@
 export class Curso{
     
-    #codigo;
-    #nombre;
-    #horas;
+    _codigo;
+    _nombre;
+    _horas;
 
     constructor(codigo, nombre, horas){
-        this.#codigo = codigo;
-        this.#nombre = nombre;
-        this.#horas = horas;
+        this._codigo = codigo;
+        this._nombre = nombre;
+        this._horas = horas;
     } 
 
     get codigo(){
-        return this.#codigo;
+        return this._codigo;
     }
 
     set codigo(codigo){
-        this.#codigo = codigo;
+        this._codigo = codigo;
     }
 
     get nombre(){
-        return this.#nombre;
+        return this._nombre;
     }
 
     set nombre(nombre){
-        this.#nombre = nombre;
+        this._nombre = nombre;
     }
 
     get horas(){
-        return this.#horas;
+        return this._horas;
     }
 
     set horas(horas){
         const regex = new RegExp(/[0-9]/, 'g');
         if(regex.test(String(horas))){
-            this.#horas = horas;
+            this._horas = horas;
         }
     }
 
     mostrarDatos(){
-        return `Código: ${this.#codigo} Nombre: ${this.#nombre} Horas: ${this.#horas}`;
+        return `Código: ${this._codigo} Nombre: ${this._nombre} Horas: ${this._horas}`;
     }
 
 }
