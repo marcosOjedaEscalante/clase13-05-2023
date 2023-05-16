@@ -7,10 +7,7 @@ const leerArchivo = nombreArchivo => parse(readFileSync(`./data/${nombreArchivo}
 
 const construirCurso = arregloDeArreglosCursos => arregloDeArreglosCursos.map(curso => curso = new Curso(curso[0],curso[1],curso[2]));
 
-const escribirJSON = (arregloCursos) => {
-    const arregloCursosCadena = JSON.stringify(arregloCursos);
-    writeFileSync('./dataJSON/cursos.json', arregloCursosCadena);
-}
+const escribirJSON = arregloCursos => writeFileSync('./dataJSON/cursos.json', JSON.stringify(arregloCursos));
 
 export {
     leerArchivo,
