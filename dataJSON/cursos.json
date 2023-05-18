@@ -1,1 +1,272 @@
-[{"_codigo":"codigo","_nombre":"nombre","_horas":"horas"},{"_codigo":"123456","_nombre":"programación fullstack java","_horas":"480"},{"_codigo":"234567","_nombre":"programación fullstack python","_horas":"462"},{"_codigo":"345678","_nombre":"programación fullstack js","_horas":"472"},{"_codigo":"456789","_nombre":"programación frontend vuejs","_horas":"438"},{"_codigo":"567891","_nombre":"programación frontend react","_horas":"458"},{"_codigo":"678912","_nombre":"programación frontend angular","_horas":"458"},{"_codigo":"789123","_nombre":"programación aplicaciones móviles android","_horas":"450"},{"_codigo":"891234","_nombre":"programación aplicaciones móviles ios","_horas":"450"},{"_codigo":"912345","_nombre":"programación aplicaciones móviles híbridas","_horas":"450"}]
+[
+    {
+        "_codigo": "codigo",
+        "_nombre": "nombre",
+        "_horas": "horas",
+        "_estudiantes": []
+    },
+    {
+        "_codigo": "123456",
+        "_nombre": "programación fullstack java",
+        "_horas": "480",
+        "_relator": {
+            "_rut": "11.111.111-1",
+            "_nombre": "Juan",
+            "_apellido": "Rodriguez",
+            "_codigoCurso": "123456"
+        },
+        "_ayudante": {
+            "_rut": "12.123.123-1",
+            "_nombre": "Jaime",
+            "_apellido": "Soto",
+            "_codigoCurso": "123456"
+        },
+        "_estudiantes": [
+            {
+                "_rut": "10.123.123-1",
+                "_nombre": "Natalia",
+                "_apellido": "Valdebenito",
+                "_codigoCurso": "123456"
+            },
+            {
+                "_rut": "10.132.132-1",
+                "_nombre": "Juan",
+                "_apellido": "Gonzalez",
+                "_codigoCurso": "123456"
+            },
+            {
+                "_rut": "10.134.134-2",
+                "_nombre": "Jorge",
+                "_apellido": "Méndez",
+                "_codigoCurso": "123456"
+            }
+        ]
+    },
+    {
+        "_codigo": "234567",
+        "_nombre": "programación fullstack python",
+        "_horas": "462",
+        "_relator": {
+            "_rut": "22.222.222-2",
+            "_nombre": "Marcos",
+            "_apellido": "Ojeda",
+            "_codigoCurso": "234567"
+        },
+        "_ayudante": {
+            "_rut": "13.134.134-2",
+            "_nombre": "Fernando",
+            "_apellido": "De La Lastra",
+            "_codigoCurso": "234567"
+        },
+        "_estudiantes": [
+            {
+                "_rut": "11.145.145-3",
+                "_nombre": "María",
+                "_apellido": "Valdebenito",
+                "_codigoCurso": "234567"
+            },
+            {
+                "_rut": "15.154.167-4",
+                "_nombre": "Juan",
+                "_apellido": "Fernandez",
+                "_codigoCurso": "234567"
+            },
+            {
+                "_rut": "15.234.345-5",
+                "_nombre": "Víctor",
+                "_apellido": "Cabrera",
+                "_codigoCurso": "234567"
+            },
+            {
+                "_rut": "17.345.345-6",
+                "_nombre": "Alicia",
+                "_apellido": "Mercedez",
+                "_codigoCurso": "234567"
+            }
+        ]
+    },
+    {
+        "_codigo": "345678",
+        "_nombre": "programación fullstack js",
+        "_horas": "472",
+        "_relator": {
+            "_rut": "33.333.333-3",
+            "_nombre": "Alejandro",
+            "_apellido": "Bonilla",
+            "_codigoCurso": "345678"
+        },
+        "_ayudante": {
+            "_rut": "14.145.145-3",
+            "_nombre": "Francisco",
+            "_apellido": "Hormazabal",
+            "_codigoCurso": "345678"
+        },
+        "_estudiantes": [
+            {
+                "_rut": "17.987.987-9",
+                "_nombre": "Henry",
+                "_apellido": "Mendoza",
+                "_codigoCurso": "345678"
+            },
+            {
+                "_rut": "18.546.546-6",
+                "_nombre": "Lucía",
+                "_apellido": "Martínez",
+                "_codigoCurso": "345678"
+            }
+        ]
+    },
+    {
+        "_codigo": "456789",
+        "_nombre": "programación frontend vuejs",
+        "_horas": "438",
+        "_relator": {
+            "_rut": "44.444.444-4",
+            "_nombre": "Adrián",
+            "_apellido": "Franco",
+            "_codigoCurso": "456789"
+        },
+        "_ayudante": {
+            "_rut": "15.156.156-4",
+            "_nombre": "Manuel",
+            "_apellido": "Manríques",
+            "_codigoCurso": "456789"
+        },
+        "_estudiantes": [
+            {
+                "_rut": "22.343.456-6",
+                "_nombre": "Daniela",
+                "_apellido": "Villalobos",
+                "_codigoCurso": "456789"
+            },
+            {
+                "_rut": "23.543.456-6",
+                "_nombre": "Sara",
+                "_apellido": "Del Piero",
+                "_codigoCurso": "456789"
+            },
+            {
+                "_rut": "27.654.654-7",
+                "_nombre": "Melisa",
+                "_apellido": "Jeria",
+                "_codigoCurso": "456789"
+            }
+        ]
+    },
+    {
+        "_codigo": "567891",
+        "_nombre": "programación frontend react",
+        "_horas": "458",
+        "_relator": {
+            "_rut": "55.555.555-5",
+            "_nombre": "Carlos",
+            "_apellido": "García",
+            "_codigoCurso": "567891"
+        },
+        "_ayudante": {
+            "_rut": "16.167.167-5",
+            "_nombre": "Rodrigo",
+            "_apellido": "Flores",
+            "_codigoCurso": "567891"
+        },
+        "_estudiantes": [
+            {
+                "_rut": "11.975.965-6",
+                "_nombre": "Carla",
+                "_apellido": "Maturana",
+                "_codigoCurso": "567891"
+            }
+        ]
+    },
+    {
+        "_codigo": "678912",
+        "_nombre": "programación frontend angular",
+        "_horas": "458",
+        "_relator": {
+            "_rut": "66.666.666-6",
+            "_nombre": "Angeri",
+            "_apellido": "Martinez",
+            "_codigoCurso": "678912"
+        },
+        "_ayudante": {
+            "_rut": "17.178.178-6",
+            "_nombre": "Estefany",
+            "_apellido": "Valenzuela",
+            "_codigoCurso": "678912"
+        },
+        "_estudiantes": []
+    },
+    {
+        "_codigo": "789123",
+        "_nombre": "programación aplicaciones móviles android",
+        "_horas": "450",
+        "_relator": {
+            "_rut": "77.777.777-7",
+            "_nombre": "Gustavo",
+            "_apellido": "Salazar",
+            "_codigoCurso": "789123"
+        },
+        "_ayudante": {
+            "_rut": "18.189.189-7",
+            "_nombre": "Mariana",
+            "_apellido": "González",
+            "_codigoCurso": "789123"
+        },
+        "_estudiantes": [
+            {
+                "_rut": "15.438.456-1",
+                "_nombre": "Marcelo",
+                "_apellido": "Carrasco",
+                "_codigoCurso": "789123"
+            },
+            {
+                "_rut": "18.564.678-5",
+                "_nombre": "Diego",
+                "_apellido": "Moralez",
+                "_codigoCurso": "789123"
+            },
+            {
+                "_rut": "15.430.567-3",
+                "_nombre": "Francisca",
+                "_apellido": "Ávila",
+                "_codigoCurso": "789123"
+            }
+        ]
+    },
+    {
+        "_codigo": "891234",
+        "_nombre": "programación aplicaciones móviles ios",
+        "_horas": "450",
+        "_relator": {
+            "_rut": "88.888.888-8",
+            "_nombre": "René",
+            "_apellido": "Rodriguez",
+            "_codigoCurso": "891234"
+        },
+        "_ayudante": {
+            "_rut": "19.191.191-8",
+            "_nombre": "Diana",
+            "_apellido": "Jiménez",
+            "_codigoCurso": "891234"
+        },
+        "_estudiantes": []
+    },
+    {
+        "_codigo": "912345",
+        "_nombre": "programación aplicaciones móviles híbridas",
+        "_horas": "450",
+        "_relator": {
+            "_rut": "99.999.999-9",
+            "_nombre": "Jorge",
+            "_apellido": "Martínez",
+            "_codigoCurso": "912345"
+        },
+        "_ayudante": {
+            "_rut": "11.192.192-9",
+            "_nombre": "Hiliana",
+            "_apellido": "Bustamante",
+            "_codigoCurso": "912345"
+        },
+        "_estudiantes": []
+    }
+]
