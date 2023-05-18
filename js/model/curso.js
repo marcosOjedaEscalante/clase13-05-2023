@@ -3,11 +3,17 @@ export class Curso{
     _codigo;
     _nombre;
     _horas;
+    _relator;
+    _ayudante;
+    _estudiantes;
 
-    constructor(codigo, nombre, horas){
+    constructor(codigo, nombre, horas, relator, ayudante, estudiantes){
         this._codigo = codigo;
         this._nombre = nombre;
         this._horas = horas;
+        this._relator = relator;
+        this._ayudante = ayudante;
+        this._estudiantes = estudiantes;
     } 
 
     get codigo(){
@@ -35,6 +41,30 @@ export class Curso{
         if(regex.test(String(horas))){
             this._horas = horas;
         }
+    }
+
+    get relator(){
+        return this._relator;
+    }
+
+    set relator(relator){
+        this._relator = relator;
+    }
+
+    get ayudante(){
+        return this._ayudante;
+    }
+
+    set ayudante(ayudante){
+        this._ayudante = ayudante;
+    }
+
+    get estudiantes(){
+        return this._estudiantes;
+    }
+
+    set estudiantes(estudiante){
+        this._estudiantes.push(estudiante);
     }
 
     mostrarDatos(){

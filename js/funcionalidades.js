@@ -1,7 +1,7 @@
 import { readFileSync } from "fs";
 import { writeFileSync } from "fs";
 import { parse } from "csv-parse/sync";
-import { Curso } from "./curso.js";
+import { Curso } from "./model/curso.js";
 
 const leerArchivo = nombreArchivo => parse(readFileSync(`./data/${nombreArchivo}.csv`, 'utf-8'));
 

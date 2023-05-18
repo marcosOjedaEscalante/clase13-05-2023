@@ -1,5 +1,5 @@
 import { Persona } from "./persona.js";
 
-class Ayudante extends Persona{
+export class Ayudante extends Persona{
 
 }
