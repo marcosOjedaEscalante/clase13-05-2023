@@ -7,7 +7,7 @@ export class Curso{
     _ayudante;
     _estudiantes;
 
-    constructor(codigo, nombre, horas, relator, ayudante, estudiantes){
+    constructor(codigo, nombre, horas, relator, ayudante, estudiantes = []){
         this._codigo = codigo;
         this._nombre = nombre;
         this._horas = horas;
