@@ -2,10 +2,18 @@ import { leerArchivo } from "./funcionalidades.js";
 import { construirCurso, construirAyudante, construirRelator, construirEstudiante, construirCursoColaboracion } from "./funcionalidades.js";
 import { escribirJSON } from "./funcionalidades.js";
 
-/* console.log(construirCurso(leerArchivo('cursos')));
-console.log(construirRelator(leerArchivo('relatores')));
-console.log(construirAyudante(leerArchivo('ayudantes')));
-console.log(construirEstudiante(leerArchivo('estudiantes'))); */
-/* escribirJSON(construirCurso(leerArchivo('cursos'))); */
+const arregloCursos = construirCurso(leerArchivo('cursos'));
+let arregloRelatores = [];
+const funcionConCallback = (callback) => {
+    setTimeout(() => {
+        arregloRelatores = construirRelator(leerArchivo('relatores'));
+        callback(construirCursoColaboracion(arregloCursos, arregloRelatores, arregloAyudantes, arregloEstudiantes));
+    }, 5000);
+}
 
-escribirJSON(construirCursoColaboracion(construirCurso(leerArchivo('cursos')), construirRelator(leerArchivo('relatores')), construirAyudante(leerArchivo('ayudantes')), construirEstudiante(leerArchivo('estudiantes'))));
+funcionConCallback(escribirJSON);
+
+const arregloAyudantes = construirAyudante(leerArchivo('ayudantes'));
+const arregloEstudiantes = construirEstudiante(leerArchivo('estudiantes'));
+
+escribirJSON(construirCursoColaboracion(arregloCursos, arregloRelatores, arregloAyudantes, arregloEstudiantes));
